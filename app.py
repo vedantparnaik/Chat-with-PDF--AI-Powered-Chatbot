@@ -36,7 +36,8 @@ def get_vector_store(text_chunks):
     vector_store = Chroma.from_texts(text_chunks, embedding=embeddings, persist_directory="./chroma_db")
     # Save the vector store
     vector_store.persist()
-    print("ChromaDB index saved successfully.")
+    st.success("Saved successfully!")
+    print("Files saved successfully.")
 
 
 def get_conversational_chain():
@@ -59,7 +60,6 @@ def get_conversational_chain():
     return chain
 
 
-
 def user_input(user_question):
     embeddings = GoogleGenerativeAIEmbeddings(model = "models/embedding-001")
     vector_store = Chroma(persist_directory="./chroma_db", embedding_function=embeddings)
@@ -72,16 +72,19 @@ def user_input(user_question):
         {"input_documents":docs, "question": user_question}
         , return_only_outputs=True)
 
-    print(response)
+    # print(response)
     st.write("Reply: ", response["output_text"])
 
 
-
-
 def main():
-    st.set_page_config("Chat PDF")
-    st.header("Chat with PDF using Gemini💁")
-
+    st.set_page_config(page_title="Chat with PDF", page_icon="📚")
+    st.header("Chat with Your PDF Files")
+    st.write(
+        """
+        Upload your PDF files, and ask questions about their content. This AI-powered chatbot 
+        will read through the documents and provide answers based on the content.
+        """
+    )
     user_question = st.text_input("Ask a Question from the PDF Files")
 
     if user_question:
