@@ -75,14 +75,3 @@
 - "Can you summarize the conclusion?"
 
 ---
-
-## 📂 Project Structure
-
-chat-with-pdf/
-├── app.py                   # Main Streamlit application file where the logic is implemented
-├── requirements.txt         # List of dependencies for the project
-├── .env                     # Environment variables (Google API key)
-├── chroma_db/               # Directory for storing the ChromaDB vector store
-├── README.md                # Project documentation (this file)
-└── LICENSE                  # License file (e.g., MIT License)
-
