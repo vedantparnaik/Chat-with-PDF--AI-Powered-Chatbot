@@ -85,13 +85,10 @@ def main():
         will read through the documents and provide answers based on the content.
         """
     )
-    user_question = st.text_input("Ask a Question from the PDF Files")
-
-    if user_question:
-        user_input(user_question)
+    # user_question = st.text_input("Ask a Question from the PDF Files")
 
     with st.sidebar:
-        st.title("Menu:")
+        st.header("Menu")
         pdf_docs = st.file_uploader("Upload your PDF Files and Click on the Submit & Process Button", accept_multiple_files=True)
         if st.button("Submit & Process"):
             with st.spinner("Processing..."):
@@ -100,6 +97,17 @@ def main():
                 get_vector_store(text_chunks)
                 st.success("Done")
 
+    # User input for asking questions
+    user_question = st.text_input("Ask a Question from the PDF Files")
+    if user_question:
+        with st.spinner("Finding answer..."):
+            user_input(user_question)
+
+    # Display example for better user experience
+    if not pdf_docs:
+        st.write("👉 Upload PDFs to get started.")
+    if not user_question:
+        st.write("👉 Type a question above to ask the chatbot.")
 
 
 if __name__ == "__main__":
