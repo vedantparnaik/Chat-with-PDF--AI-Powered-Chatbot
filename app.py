@@ -141,7 +141,7 @@ def main():
         """
         <div style="text-align:center;">
             <p style="color:#9E9E9E;">Made with ❤️ by Vedant Parnaik</p>
-            <a href="https://github.com/your-github" target="_blank">
+            <a href="https://github.com/vedantparnaik" target="_blank">
                 <button class="button">View My GitHub</button>
             </a>
         </div>
