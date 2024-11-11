@@ -12,8 +12,13 @@ from langchain_community.vectorstores import Chroma
 
 # Load environment variables
 load_dotenv()
-os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# os.getenv("GOOGLE_API_KEY")
+# genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
+# Access API key from Streamlit's Secrets Manager
+google_api_key = st.secrets["GOOGLE_API_KEY"]
+
+# Configure the API with the key
+genai.configure(api_key=google_api_key)
 
 # --- Helper Functions ---
 def get_pdf_text(pdf_docs):
