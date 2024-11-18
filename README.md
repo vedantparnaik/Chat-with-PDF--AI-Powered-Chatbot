@@ -72,6 +72,6 @@
 
 - "What is the main topic of the document?"
 - "What are the key findings in the report?"
-- "Can you summarize the conclusion?"
+- "Can you summarize the document?"
 
 ---
