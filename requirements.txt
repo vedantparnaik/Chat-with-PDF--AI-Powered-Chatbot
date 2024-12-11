@@ -9,3 +9,4 @@ pydantic>=2.0.0
 streamlit
 pysqlite3-binary>=0.5.0
  
+ 
