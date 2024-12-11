@@ -8,3 +8,4 @@ langchain_google_genai>=0.2.0
 pydantic>=2.0.0
 streamlit
 pysqlite3-binary>=0.5.0
+ 
