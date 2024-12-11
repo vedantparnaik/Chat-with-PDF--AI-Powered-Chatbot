@@ -11,7 +11,7 @@
 - **PDF Parsing**: PyPDF2
 - **Environment Variables**: `.env` (for storing API keys) 
 
-## 💡 Features
+## 💡 Features  
 
 - **PDF Upload**: Upload multiple PDF files through an intuitive UI.
 - **Question Answering**: Ask questions about the content of the uploaded PDFs.
