@@ -9,7 +9,7 @@
 - **Embeddings**: Google Generative AI Embeddings
 - **Text Vectorization**: Chroma
 - **PDF Parsing**: PyPDF2
-- **Environment Variables**: `.env` (for storing API keys)
+- **Environment Variables**: `.env` (for storing API keys) 
 
 ## 💡 Features
 
