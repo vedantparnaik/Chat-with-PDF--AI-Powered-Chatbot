@@ -11,8 +11,6 @@
 - **PDF Parsing**: PyPDF2
 - **Environment Variables**: `.env` (for storing API keys) 
 
-![Landing Page](https://github.com/vedantparnaik/Chat-with-PDF--AI-Powered-Chatbot/newversion.png)
-
 ## 💡 Features  
 
 - **PDF Upload**: Upload multiple PDF files through an intuitive UI.
