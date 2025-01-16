@@ -3,7 +3,7 @@
 **Chat with PDF** is an AI-powered chatbot that allows users to upload PDF documents and interact with them by asking questions based on the content of the PDF. Using **Google's Gemini Model** for natural language understanding, this project extracts information from uploaded PDFs and provides detailed answers, making it an ideal tool for knowledge retrieval, document analysis, and research purposes.
 
 ## 🛠️ Tech Stack 
-
+ 
 - **Frontend**: Streamlit (Python-based Web Framework)
 - **Backend**: Python, LangChain, Google Gemini
 - **Embeddings**: Google Generative AI Embeddings
